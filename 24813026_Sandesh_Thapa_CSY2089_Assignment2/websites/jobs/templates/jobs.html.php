@@ -2,8 +2,8 @@
     <section class="left">
         <ul>
             <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="categories.php">Categories</a></li>
             <li><a href="jobArchive.php">Archived Jobs</a></li>
+            <li><a href="categories.php">Categories</a></li>
             <li><a href="staffManagement.php">Staff Management</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             if (confirm('Archive this job?')) {
                 var jobId = this.getAttribute('data-id');
-                fetch('archivejob.php', {
+                fetch('archievejob.php', { // <-- make sure this matches your PHP filename
                     method: 'POST',
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     body: 'id=' + encodeURIComponent(jobId)

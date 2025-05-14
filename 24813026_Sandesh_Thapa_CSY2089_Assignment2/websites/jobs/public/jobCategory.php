@@ -2,7 +2,6 @@
 require_once '../database.php';
 require_once '../loadTemplate.php';
 
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Get filters

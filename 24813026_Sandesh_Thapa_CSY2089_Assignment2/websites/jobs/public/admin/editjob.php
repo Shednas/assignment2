@@ -1,9 +1,10 @@
 <?php
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
-session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-require '../../loadTemplate.php';
+require_once '../../database.php';
+require '../../controllers/JobController.php';
 
-$title = "Jo's Jobs - Edit Job";
-$content = loadTemplate("../../templates/editjob.html.php", ['pdo' => $pdo]);
-require("../../templates/layout.html.php");
+$controller = new JobController($pdo);
+$id = $_GET['id'] ?? $_POST['id'] ?? null;
+$controller->edit($id);

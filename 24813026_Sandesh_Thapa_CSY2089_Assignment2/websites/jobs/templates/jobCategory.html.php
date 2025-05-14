@@ -17,7 +17,15 @@
                         <?php if (!empty($job['category_name'])): ?>
                             (<?php echo htmlspecialchars($job['category_name']); ?>)
                         <?php endif; ?><br>
-                        Salary: £<?php echo number_format($job['salary']); ?><br>
+                        <td>
+                            <?php
+                            if (is_numeric($job['salary'])) {
+                                echo '£' . number_format($job['salary']);
+                            } else {
+                                echo htmlspecialchars($job['salary']);
+                            }
+                            ?>
+                        </td><br>
                         Location: <?php echo htmlspecialchars($job['location']); ?><br>
                         Closing Date: <?php echo date('d/m/Y', strtotime($job['closingDate'])); ?><br>
                         <div>

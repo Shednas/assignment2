@@ -1,9 +1,10 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once '../../database.php';
-require_once '../../functions.php';
 require_once '../../controllers/categoryController.php';
 
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
 $controller = new CategoryController($pdo);
-$controller->listCategories();
+$controller->list();
 ?>

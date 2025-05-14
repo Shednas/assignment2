@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
+require_once '../../database.php';
 session_start();
 
 require '../../loadTemplate.php';
@@ -32,5 +32,8 @@ $content = loadTemplate("../../templates/jobs.html.php", [
     'categories' => $categories,
     'categoryFilter' => $categoryFilter
 ]);
+
+// Remove direct echo of edit link and rely on the template for edit/delete actions
+
 require("../../templates/layout.html.php");
 ?>

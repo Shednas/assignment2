@@ -1,4 +1,5 @@
 <?php
+    require_once '../database.php';
     require '../loadTemplate.php'; 
 
     $title = "Jo's Jobs - Home";

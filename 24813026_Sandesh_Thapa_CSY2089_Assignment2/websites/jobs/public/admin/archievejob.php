@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
+require_once '../../database.php';
 session_start();
 
 header('Content-Type: application/json');

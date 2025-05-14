@@ -1,5 +1,7 @@
 <?php
-$pdo = new PDO('mysql:dbname=job;host=mysql', 'student', 'student');
+if (!isset($pdo)) {
+    require_once __DIR__ . '/../database.php';
+}
 ?>
 <!DOCTYPE html>
 <html>

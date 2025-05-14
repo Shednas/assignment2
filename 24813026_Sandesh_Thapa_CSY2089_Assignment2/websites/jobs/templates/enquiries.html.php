@@ -2,6 +2,7 @@
     <section class="left">
         <ul>
             <li><a href="jobs.php">Jobs</a></li>
+            <li><a href="jobArchive.php">Archived Jobs</a></li>
             <li><a href="categories.php">Categories</a></li>
             <li><a href="staffManagement.php">Staff Management</a></li>
             <li><a href="enquiries.php">Enquiries</a></li>

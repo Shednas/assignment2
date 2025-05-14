@@ -1,12 +1,14 @@
 <main class="sidebar">
     <section class="left">
-        <ul>
-            <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="categories.php">Categories</a></li>
-            <li><a href="staffManagement.php">Staff Management</a></li>
-            <li><a href="logout.php">Logout</a></li>
-        </ul>
-    </section>
+            <ul>
+                <li><a href="jobs.php">Jobs</a></li>
+                <li><a href="jobArchieve.php">Archived Jobs</a></li>
+                <li><a href="categories.php">Categories</a></li>
+                <li><a href="staffManagement.php">Staff Management</a></li>
+                <li><a href="enquiries.php">Enquiries</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </section>
     <section class="right">
         <h2>Staff Management</h2>
         <?php if (!empty($message)) echo '<p>' . htmlspecialchars($message) . '</p>'; ?>

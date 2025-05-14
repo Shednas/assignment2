@@ -1,12 +1,14 @@
 <main class="sidebar">
     <section class="left">
-        <ul>
-            <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="categories.php">Categories</a></li>
-            <li><a href="staffManagement.php">Staff Management</a></li>
-            <li><a href="logout.php">Logout</a></li>
-        </ul>
-    </section>
+            <ul>
+                <li><a href="jobs.php">Jobs</a></li>
+                <li><a href="jobArchive.php">Archived Jobs</a></li>
+                <li><a href="categories.php">Categories</a></li>
+                <li><a href="staffManagement.php">Staff Management</a></li>
+                <li><a href="enquiries.php">Enquiries</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </section>
 
     <section class="right">
         <h2>Categories</h2>
@@ -25,7 +27,7 @@
                         <td><?= htmlspecialchars($category['name']) ?></td>
                         <td><a href="editcategory.php?id=<?= $category['id'] ?>">Edit</a></td>
                         <td>
-                            <form method="post" action="deletecategory.php">
+                            <form method="post" action="deletecategory.php" onsubmit="return confirm('Delete this category?');" style="display:inline;">
                                 <input type="hidden" name="id" value="<?= $category['id'] ?>" />
                                 <input type="submit" value="Delete" />
                             </form>
