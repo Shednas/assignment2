@@ -1,0 +1,103 @@
+# **CSY2089 Web Programming Assignment 2 - Guidelines**
+
+## **General Instructions**
+1. **Understand the Requirements**  
+   - Carefully read the assignment brief and ensure you understand all the client’s requested changes.
+   - Prioritize completing at least 7 of the 11 requested changes for a bare pass, but aim to complete all 11 for a higher grade.
+
+2. **Follow Submission Guidelines**  
+   - Submit all required deliverables:
+     - Technical documentation (Word document uploaded to Turnitin and included in the zip file).
+     - Source code (zip file with the website directory and `database.sql`).
+     - Source code Word document (all PHP code copied into a single document for Turnitin).
+     - Video demonstration (5–10 minutes showcasing implemented features).
+
+3. **Plagiarism Policy**  
+   - Ensure all work is your own. If you use external code, reference it properly using Harvard referencing.
+   - Clearly document which lines of code were borrowed, where they were used, and their purpose.
+
+---
+
+## **Development Guidelines**
+1. **Environment Setup**  
+   - Use a local development environment (e.g., XAMPP, WAMP, or MAMP) to run the PHP/MySQL website.
+   - Ensure the database is properly configured and matches the `database.sql` file.
+
+2. **Code Quality**  
+   - Write clean, well-documented, and consistently indented code.
+   - Use meaningful variable and function names.
+   - Avoid hardcoding values; use configuration files where necessary.
+
+3. **Security Best Practices**  
+   - Sanitize all user inputs to prevent SQL injection and XSS attacks.
+   - Use prepared statements for database queries.
+   - Hash passwords using `password_hash()` and verify them with `password_verify()`.
+
+4. **Refactoring**  
+   - Eliminate duplicate code by creating reusable functions or classes.
+   - Use a single entry point (e.g., `index.php`) to handle all requests.
+   - Separate concerns by organizing code into logical components (e.g., controllers, models, and views).
+
+5. **Testing**  
+   - Test all implemented features manually to ensure they work as expected.
+   - Write PHPUnit tests for key functionality (e.g., form submissions, database interactions).
+   - Document all tests in the technical documentation.
+
+---
+
+## **Checklist for Client-Requested Changes**
+| **Feature**                      | **Completed?** | **Relevant Files**               | **Notes**                                                                 |
+|----------------------------------|----------------|----------------------------------|---------------------------------------------------------------------------|
+| Update copyright notice          | Yes/No         | `footer.php`                     | Update the year to 2025.                                                 |
+| Add "Careers Advice" page        | Yes/No         | `careers.php`, `navigation.php`  | Add a new page with relevant content and link it in the navigation bar.  |
+| Fix category display             | Yes/No         | `jobs.php`, `navigation.php`     | Ensure new categories appear in job listings and navigation.             |
+| Implement job archiving..          | Yes/No         | `admin/jobs.php`, `archive.php`  | Add functionality to archive jobs for later reposting.                   |
+| Enhance admin job list           | Yes/No         | `admin/jobs.php`                 | Add category and date columns, filtering, and sorting.                   |
+| Customer job filtering           | Yes/No         | `jobs.php`, `filter.php`         | Allow filtering by job title and location.                               |
+| Admin user management            | Yes/No         | `admin/users.php`                | Implement unique usernames and passwords for admin users.                |
+| Client user accounts             | Yes/No         | `client/`, `admin/`              | Allow clients to manage their jobs and view applicants.                  |
+| Display closing soon jobs        | Yes/No         | `index.php`, `jobs.php`          | Show the 5 jobs with the nearest closing dates on the homepage.          |
+| Contact form with enquiry mgmt.  | Yes/No         | `contact.php`, `admin/enquiries` | Add a contact form and manage enquiries in the admin area.               |
+
+---
+
+-- Test using functions and screeneshots
+
+## **Technical Documentation**
+1. **Checklist of Features**  
+   - Include a table (as shown above) to indicate which features were completed, partially completed, or not completed.
+
+2. **Testing Evidence**  
+   - Provide test logs for all features, including failed tests for incomplete functionality.
+   - Include PHPUnit test results and code coverage reports.
+
+3. **References**  
+   - Use Harvard referencing for any external code or resources used.
+   - Clearly indicate which parts of the code were borrowed and their purpose.
+
+---
+
+## **Video Demonstration**
+1. **Duration**  
+   - The video should be 5–10 minutes (maximum 15 minutes).
+
+2. **Content**  
+   - Demonstrate all implemented features as if presenting to the client.
+   - Highlight any known bugs or incomplete features.
+   - Show validation (e.g., entering invalid values in forms).
+
+3. **Recording Tips**  
+   - Use screen recording software (e.g., OBS Studio, Camtasia, or Zoom).
+   - Ensure your voice is clear and the screen is visible.
+
+---
+
+## **Submission Checklist**
+- [ ] **Technical Documentation** (Word document uploaded to Turnitin and included in the zip file).  
+- [ ] **Source Code** (zip file with website directory and `database.sql`).  
+- [ ] **Source Code Word Document** (all PHP code copied into a single document for Turnitin).  
+- [ ] **Video Demonstration** (5–10 minutes showcasing features).  
+
+---
+
+Follow these guidelines carefully to ensure you meet all the requirements for the assignment. Let me know if you need help with any specific part! 
